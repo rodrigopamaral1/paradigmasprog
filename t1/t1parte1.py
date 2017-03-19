@@ -36,9 +36,9 @@ def RetParAux(x): return x%2 == 0
 list(filter(RetParAux, [1,2,3,4]))
 
 # 9.Crie uma função charFound(c,s) que verifique se o caracter c está contido na string. O resultado deve ser True ou False. Você não deve usar o operador in. Defina uma função auxiliar para ajudar neste exercício.
-def charFound(c,s):
-    def aux(x): return x == c
-    return len(str(filter(aux, s))) > 0
+def aux(c,s): return len(str(filter(lambda x:x == c, s)))
+
+def charFound(c,s): return aux(c,s) > 0
 
 # 10.Escreva uma função que receba uma lista de strings e retorne uma nova lista com adição de marcações HTML (p.ex.: <B> e </B>) antes e depois de cada string.
 def html_aux(string): return "<B>" + string + "</B>"
