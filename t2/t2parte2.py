@@ -22,7 +22,7 @@ def applyStyles(rects, styles):
 
 # It's Done
 def genRects(n, w, h):
-   return [((0.0,w*x),w,h) for x in range(0, n)]
+   return [((w*x,0.0),w,h) for x in range(0, n)]
 
 def writeFile(fname, contents):
    f = open(fname, 'w')
