@@ -32,7 +32,7 @@ def enumerate(words): return [(x+1, words[x]) for x in range(0, len(words))]
 
 # 9) Escreva uma função isBin(s) que verifique se a string recebida representa um número binário. Exemplo:
 
-def isBin(num): return len([x for x in num if x not in("0", "1")]) == 0
+def isBin(s): return len([x for x in s if x not in("0", "1")]) == 0
 
 # 10) Escreva uma função bin2dec(digits), que receba uma lista de dígitos representando um número binário e retorne seu equivalente em decimal. Exemplo:
 
