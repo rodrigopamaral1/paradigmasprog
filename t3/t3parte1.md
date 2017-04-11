@@ -1,12 +1,12 @@
----------------------------------------PARTE 1-----------------------------------------------------------------------
-[trace]  ?- avo(joao,Y). 
-   Call: (8) avo(joao, _5448) ? creep // CHAMADA DA FUNÇÃO AVO
-   Call: (9) pai(joao, _5666) ? creep // CHAMADA DA PRIMEIRA FUNçÃO DE AVO
-   Exit: (9) pai(joao, jose) ? creep //  RETORNO COM SUCESSO, JOAO POSSUI UM FILHO JOSE
-   Call: (9) pai(jose, _5448) ? creep // CHAMADA DA SEGUNDA FUNÇÂO DE AVO, AGORA PRA PROCURAR FILHOS DE JOSE, NETOS DE JOAO
-   Fail: (9) pai(jose, _5448) ? creep// FALHOU, NAO ENCONTRA NENHUM FILHO DE JOSE, LOGO NAO A NETOS DE JOAO
-   Fail: (8) avo(joao, _5448) ? creep// FAHOU, PROCURA POR MAIS FILHOS E NAO ACHA, ENTAO RETORNA FALSE
-false.
+---------------------------------------PARTE 1-----------------------------------------------------------------------</p>
+[trace]  ?- avo(joao,Y). </p>
+   Call: (8) avo(joao, _5448) ? creep // CHAMADA DA FUNÇÃO AVO</p>
+   Call: (9) pai(joao, _5666) ? creep // CHAMADA DA PRIMEIRA FUNçÃO DE AVO</p>
+   Exit: (9) pai(joao, jose) ? creep //  RETORNO COM SUCESSO, JOAO POSSUI UM FILHO JOSE</p>
+   Call: (9) pai(jose, _5448) ? creep // CHAMADA DA SEGUNDA FUNÇÂO DE AVO, AGORA PRA PROCURAR FILHOS DE JOSE, NETOS DE JOAO</p>
+   Fail: (9) pai(jose, _5448) ? creep// FALHOU, NAO ENCONTRA NENHUM FILHO DE JOSE, LOGO NAO A NETOS DE JOAO</p>
+   Fail: (8) avo(joao, _5448) ? creep// FAHOU, PROCURA POR MAIS FILHOS E NAO ACHA, ENTAO RETORNA FALSE</p>
+false.</p>
 
 
 [trace]  ?- avo(roberto,Y).
