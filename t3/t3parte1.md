@@ -52,7 +52,7 @@ Y = mario.</p>
    Exit: (11) 0 is 4-2*2 ? creep //</p>
    Call: (11) azulejos(0, _5390) ? creep // AQUI </p>
    Exit: (11) azulejos(0, 0) ? creep// CHAMA A PROXIMA RECURSAO PASSANDO VALOR 0, para NA, COMO ESSA E A CONDIÇAO DE PARA COMEÇA RETORNAR</p>
-   Call: (11) _5394 is 1+0 ? creep // AGORA COMEÇAM AS COMPARAÇOES DE RETORNO </p>
+   Call: (11) _5394 is 1+0 ? creep // AGORA COMEÇAM OS RETORNO E A ULTIMA COMPARAÇAO </p>
    Exit: (11) 1 is 1+0 ? creep   // NQ is 1 + C</p>
    Exit: (10) azulejos(4, 1) ? creep</p>
    Call: (10) _5400 is 1+1 ? creep</p>
@@ -69,5 +69,34 @@ A = 3 ;                                   // TEMOS A RESPOTA AQUI</p>
    Fail: (10) azulejos(4, _5370) ? creep</p>
    Fail: (9) azulejos(20, _5350) ? creep</p>
    Fail: (8) azulejos(120, _5110) ? creep</p>
+false.</p>
+------------------------------------------------PARTE 3---------------------------------------------</p>
+sumQuads([], 0).</p>
+sumQuads(L, S) :- L = [H|T],</p>
+		 sumQuads(T, S1),    </p>               
+	         S is H*H + S1.  </p>
+        </p>
+ [trace]  ?- sumQuads([2,3],S).</p>
+   Call: (8) sumQuads([2, 3], _5122) ? creep  // CHAMDA DA FUNÇAO</p>
+   Call: (9) [2, 3]=[_5342|_5344] ? creep // PEGA HEAD AND TAIL</p>
+   Exit: (9) [2, 3]=[2, 3] ? creep </p>
+   Call: (9) sumQuads([3], _5364) ? creep // CHAMADA FUNÇAO MANDANDO O TAIL</p>
+   Call: (10) [3]=[_5348|_5350] ? creep // PEGA HEAD AND TAIL NOVAMEENTE</p>
+   Exit: (10) [3]=[3] ? creep</p>
+   Call: (10) sumQuads([], _5370) ? creep // MANDA O TAIL POREM E VAZIO, CHEGOU AO FIM DA LISTA</p>
+   Exit: (10) sumQuads([], 0) ? creep// CONDIÇAO DE PARADA</p>
+   Call: (10) _5380 is 3*3+0 ? creep // OCORRE O RETNORNO E OS CALCULOS "S is H*H + S1." COMEÇAM</p>
+   Exit: (10) 9 is 3*3+0 ? creep</p>
+   Exit: (9) sumQuads([3], 9) ? creep  // MANDA S1 (9) , para a funcao anterior</p>
+   Call: (9) _5122 is 2*2+9 ? creep</p>
+   Exit: (9) 13 is 2*2+9 ? creep // CALCULA NOVAMENTE</p>
+   Exit: (8) sumQuads([2, 3], 13) ? creep // TEMOS A RESPOSTA 13.</p>
+S = 13 ;</p>
+   Redo: (10) sumQuads([], _5370) ? creep</p>
+   Call: (11) []=[_5354|_5356] ? creep</p>
+   Fail: (11) []=[_5354|_5356] ? creep</p>
+   Fail: (10) sumQuads([], _5370) ? creep</p>
+   Fail: (9) sumQuads([3], _5364) ? creep</p>
+   Fail: (8) sumQuads([2, 3], _5122) ? creep</p>
 false.</p>
 
