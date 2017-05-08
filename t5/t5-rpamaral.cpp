@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class PontosMax {
+class PontosMax {  // Classe para guardar nomes sem repetiçoes, e a soma de suas pontuaçoes, ou seja, sua pontuaçao Total
   string nome;
   int ptmax;
 
@@ -28,7 +28,7 @@ public:
   }
 };
 
-class Pontos {
+class Pontos {  // Classe para guardar nome, atividade e pontuaçao dos jogadores
   string nome, atividade;
   int pontos;
 
