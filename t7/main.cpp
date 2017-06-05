@@ -36,7 +36,7 @@ public:
     if(!gui->participantes.empty()) gui->participantes.erase(gui->participantes.begin(), gui->participantes.end());
   }
 
-  static void cbBotao_Sortear(Fl_Widget* btn, void* userdata) {
+  static void cbBotao_Sortear(Fl_Widget* btn, void* userdata) { //Botao para sortear
     Sorteio *gui = static_cast<Sorteio*>(userdata);
 
     if(gui->participantes.empty() && gui->cont == 0) // Este if serve apenas para criar espaço no vetor e ler o numero de participantes
