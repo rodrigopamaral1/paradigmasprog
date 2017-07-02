@@ -1,0 +1,63 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0303 
+header_name {.h} 
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {UserInterface()} {open
+  } {
+    Fl_Window janela {
+      label {Web Editor} open
+      protected xywh {207 138 450 500} type Double box EMBOSSED_BOX visible
+    } {
+      Fl_Button Botao_Salvar {
+        label {Salvar Projeto}
+        xywh {10 405 215 35}
+      }
+      Fl_Box Projeto_Aberto {
+        label {Nenhum projeto ou template carregado!}
+        xywh {5 4 440 36}
+      }
+      Fl_Button Botao_Gerar {
+        label {Gerar Index.HTML}
+        xywh {230 405 210 35}
+      }
+      Fl_Button Botao_Abrir_Carregar {
+        label {Abrir e carregar arquivos projeto.csv e template.html}
+        xywh {10 450 430 40}
+      }
+      Fl_Input Titulo_Input {
+        label {Título}
+        xywh {50 52 385 43}
+      }
+      Fl_Browser Navegador {
+        label {IDS/LABELS}
+        xywh {10 145 430 150}
+      }
+      Fl_Button Botao_Deletar {
+        label Deletar
+        xywh {310 315 130 30}
+      }
+      Fl_Button Botao_Inserir {
+        label Inserir
+        xywh {170 315 130 30}
+      }
+      Fl_Button Botao_Alterar {
+        label Alterar
+        xywh {10 315 150 30}
+      }
+      Fl_Input Botao_Editar {
+        label Editor
+        xywh {55 111 260 29}
+      }
+      Fl_Button Botao_Limpar {
+        label Limpar
+        xywh {325 110 110 30}
+      }
+      Fl_Input Caixa_Botoes {
+        label {Botões de Opção} selected
+        xywh {135 359 305 31}
+      }
+    }
+  }
+} 
