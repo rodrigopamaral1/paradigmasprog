@@ -10,7 +10,7 @@ Existem botoes para inserir, deleter, alterar ...;
 
 Para usar primeiro carregue o projeto, faça as alteraçoes e clique em salvar e entao gere o index.
 
-O extra, Radio Buttons foi implementado de forma simples, fora do projeto/estrutura, pode ser usado durate a execuçao do programa e no arquivo gerado, basta inserir em Botoes de Opcao : SELEC1/SELEC2/SELECN/ e clicar em GERAR ...
+O extra, Radio Buttons foi implementado de forma simples, fora do projeto/estrutura, pode ser usado durate a execuçao do programa e no arquivo gerado, basta inserir em Botoes de Opcao : BOTAO1/BOTAO2/BOTAON/ e clicar em GERAR ...
 
 A estrutura no projeto é,
 
