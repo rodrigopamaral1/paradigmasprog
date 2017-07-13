@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<resources>
+	<set path = "images" />
+	<atlas>
+		<image file="mesa.png"/>
+		<image file="hand.png"/>		
+		<image file="ball.png"/>	
+	</atlas>
+	<set path = "fonts" />
+	<font file="main.fnt" />	
+</resources>
